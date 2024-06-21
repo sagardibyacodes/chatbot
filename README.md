@@ -1,4 +1,4 @@
-# chatbot
+# chatbot 1.0
 
 Required exe
 llama3 setup : https://llama.meta.com/llama3/
