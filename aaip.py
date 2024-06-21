@@ -3,7 +3,7 @@ import ollama
 
 class AI_Assistant:
     def main(self):
-        st.title("GetAnswer gpt")
+        st.title("Project Chat bot version 1.0")
         full_transcript = [{"role": "system", "content": "Sagar."}]
         user_input = st.text_input("Ask here:")
         if st.button("Send"):
@@ -17,7 +17,7 @@ class AI_Assistant:
             for chunk in response:
                 full_response += chunk['message']['content']
                 if chunk['message']['content'].endswith('.'):
-                    st.write(full_response)
+                    st.write("Bot:", full_response)
                     full_response = ""
 
 ai_assistant = AI_Assistant()
