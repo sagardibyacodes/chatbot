@@ -18,7 +18,7 @@ class AI_Assistant:
         for partial_resp in response:
             token = partial_resp["message"]["content"]
             st.session_state["full_message"] += token
-            yield token
+            yield from [token]
 
     def handle_user_input(self):
         if prompt := st.chat_input():
