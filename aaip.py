@@ -1,3 +1,17 @@
+# Install required libraries
+import os
+import subprocess
+
+# Install streamlit
+subprocess.run(['pip', 'install', 'streamlit'])
+
+# Install ollama
+subprocess.run(['pip', 'install', 'ollama'])
+
+# Install other required libraries
+subprocess.run(['pip', 'install', 'requests'])
+subprocess.run(['pip', 'install', 'json'])
+
 import streamlit as st
 import ollama
 
